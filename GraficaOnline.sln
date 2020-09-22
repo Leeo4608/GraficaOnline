@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraficaOnline", "GraficaOnline\GraficaOnline.csproj", "{FE12BF2B-C72D-41EC-B985-B0B46BC00CED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE12BF2B-C72D-41EC-B985-B0B46BC00CED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE12BF2B-C72D-41EC-B985-B0B46BC00CED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE12BF2B-C72D-41EC-B985-B0B46BC00CED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE12BF2B-C72D-41EC-B985-B0B46BC00CED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB96AD50-337E-49D8-8ECB-C17C0153DD74}
+	EndGlobalSection
+EndGlobal

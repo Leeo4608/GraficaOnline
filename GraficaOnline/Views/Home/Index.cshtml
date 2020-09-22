@@ -1,0 +1,83 @@
+﻿@model HomeViewModel
+@*@await Html.PartialAsync("_Carousel")*@
+<partial name="_Carousel" />
+
+<h2>Os mais pedidos durante a semana </h2>
+<h4>Mande sua arte!!!</h4>
+
+<div class="row">
+    @foreach (var produto in Model.ProdutosPreferidos)
+    {
+        
+        <partial name="_ProdutosResumo" for="@produto" />
+    }
+</div>
+
+
+<footer>
+
+    <div class="container marginTop1">
+        <img src="~/images/faleconosco1.jpg" alt="Fale conosco" />
+        <div class="jumbotron">
+            <h3>Queremos ouvir o que você tem a dizer</h3>
+            <p>
+                Se você tiver alguma dúvida ou sugestão fale conosco
+            </p>
+            <p>
+                <span>
+                    <img src="~/images/Envelope-icon24.png" />
+                </span>
+                <h5><email Endereco="leeonascimento2@Outlook.com" Conteudo="Enviar um e-mail"></email></h5>
+                <br />
+                <span>
+                    <img src="~/images/phone-app-icon.png" />
+                </span>
+                <h5>3245-0564</h5>
+                <span>
+                    <img src="~/Images/whatsapp.png" />
+                </span>
+                <br />
+                <h5>(21) 99439-3680</h5>
+                <br />
+                <span>
+                    <img src="~/Images/facebook.png" />
+                </span>
+                <br />
+                <h5><a href="https://www.facebook.com/wanderlinosouza.filho">Visite nossa página no facebook</a></h5>
+                <br />
+                <span>
+                    <img src="~/images/Home-iconred.png" />
+                </span>
+                <h5>R. Cmte. Ari Parreiras, 1690 - Porto da Madama, São Gonçalo - RJ</h5>
+            </p>
+            <br />
+            <div>
+
+                <h4>Venha nos conhecer</h4>
+                <!--The div element for the map -->
+                <div id="map"></div>
+                <script>
+                    // Initialize and add the map
+                    function initMap() {
+                        // The location of São gonçalo
+                        var uluru = { lat: -22.8346862, lng: -43.0830818 };
+                        // The map, centered at Sao gonçalo
+                        var map = new google.maps.Map(
+                            document.getElementById('map'), { zoom: 4, center: uluru });
+                        // The marker, positioned at Uluru
+                        var marker = new google.maps.Marker({ position: uluru, map: map });
+                    }
+                </script>
+                <!--Load the API from the specified URL
+        * The async attribute allows the browser to render the page while the API loads
+        * The key parameter will contain your own API key (which is not needed for this tutorial)
+        * The callback parameter executes the initMap() function
+        -->
+                <script defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChdTY_Ix_1J2ANx6yhzGqkezgY0zwL724&callback=initMap">
+                </script>
+            </div>
+        </div>
+    </div>
+    
+</footer>

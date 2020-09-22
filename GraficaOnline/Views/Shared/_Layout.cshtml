@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Gráfica online</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <style>
+            /* Set the size of the div element that contains the map */
+            #map {
+                height: 350px; /* The height is 400 pixels */
+                width: 100%; /* The width is the width of the web page */
+            }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Gráfica online</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row">
+                    <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+
+                    @await Component.InvokeAsync("CategoriaMenu")
+
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <a class="nav-link text-light float-right" asp-area="Admin" asp-controller="Admin" asp-action="Index">Admin</a>
+                    }
+
+                    <form class="navbar-right" asp-controller="Produto" asp-action="Search" method="get">
+                        <div class="form-group">
+                            <input type="text" class="form-control col-12" placeholder="Procurar produto" name="searchString" value="@ViewData["searchString"]">
+                        </div>
+                    </form>
+
+                        @await Html.PartialAsync("_LoginPartial")
+
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2020 - Gráfica online
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
