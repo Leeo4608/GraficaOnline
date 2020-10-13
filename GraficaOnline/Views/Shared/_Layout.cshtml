@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Gráfica online</title>
+    <title>@ViewData["Title"] Gráfica online</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <style>
@@ -31,11 +31,11 @@
 
                     @if (User.IsInRole("Admin"))
                     {
-                        <a class="nav-link text-light float-right" asp-area="Admin" asp-controller="Admin" asp-action="Index">Admin</a>
+                        <a class="nav-link text-light float-right" asp-area="Admin" asp-controller="Admin" asp-action="Index">Administração</a>
                     }
 
-                    <form class="navbar-right" asp-controller="Produto" asp-action="Search" method="get">
-                        <div class="form-group">
+                    <form class="navbar-right mt-3 ml-3" asp-controller="Produto" asp-action="Search" method="get">
+                        <div class="form-group float-right">
                             <input type="text" class="form-control col-12" placeholder="Procurar produto" name="searchString" value="@ViewData["searchString"]">
                         </div>
                     </form>

@@ -47,11 +47,13 @@
             <a class="btn btn-success" asp-controller="Pedido" asp-action="Checkout">Encerrar Pedido</a>
             <a class="btn-group">
                 <a class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                    Adicionar mais lanches<span class="caret"></span>
+                    Adicionar mais produtos<span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu" role="menuitem">
-                    <li><a asp-controller="Produto" asp-action="List" asp-route-categoria="Personalizado"><b>Personalizado</b></a></li>
-                    <li><a asp-controller="Produto" asp-action="List" asp-route-categoria="Não personalizado"><b>Não personalizado</b></a></li>
+                    <li><a asp-controller="Produto" asp-action="List" asp-route-categoria="Banners"><b>Banners</b></a></li>
+                    <li><a asp-controller="Produto" asp-action="List" asp-route-categoria="Camisas"><b>Camisas</b></a></li>
+                    <li><a asp-controller="Produto" asp-action="List" asp-route-categoria="Canecas"><b>Canecas</b></a></li>
+                    <li><a asp-controller="Produto" asp-action="List" asp-route-categoria="Toalhas"><b>Toalhas</b></a></li>
                 </ul>
             </a>
         </div>
