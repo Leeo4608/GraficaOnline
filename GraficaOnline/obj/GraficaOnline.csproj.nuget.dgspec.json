@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leeon\\source\\repos\\GraficaOnline\\GraficaOnline\\GraficaOnline.csproj": {}
+    "C:\\Users\\wilia\\Source\\Repos\\GraficaOnline\\GraficaOnline\\GraficaOnline.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leeon\\source\\repos\\GraficaOnline\\GraficaOnline\\GraficaOnline.csproj": {
+    "C:\\Users\\wilia\\Source\\Repos\\GraficaOnline\\GraficaOnline\\GraficaOnline.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leeon\\source\\repos\\GraficaOnline\\GraficaOnline\\GraficaOnline.csproj",
+        "projectUniqueName": "C:\\Users\\wilia\\Source\\Repos\\GraficaOnline\\GraficaOnline\\GraficaOnline.csproj",
         "projectName": "GraficaOnline",
-        "projectPath": "C:\\Users\\leeon\\source\\repos\\GraficaOnline\\GraficaOnline\\GraficaOnline.csproj",
-        "packagesPath": "C:\\Users\\leeon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leeon\\source\\repos\\GraficaOnline\\GraficaOnline\\obj\\",
+        "projectPath": "C:\\Users\\wilia\\Source\\Repos\\GraficaOnline\\GraficaOnline\\GraficaOnline.csproj",
+        "packagesPath": "C:\\Users\\wilia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\wilia\\Source\\Repos\\GraficaOnline\\GraficaOnline\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\leeon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\wilia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -46,9 +46,13 @@
               "target": "Package",
               "version": "[3.1.3, )"
             },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[3.1.8, )"
+              "version": "[3.1.9, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
@@ -58,7 +62,7 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.8, )"
+              "version": "[3.1.9, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
